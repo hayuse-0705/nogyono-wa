@@ -1,0 +1,33 @@
+<!-- /templates/customers/account.liquid -->
+
+{% if customer.default_address %}
+<div class="contents">
+<div class="p1"><p>マイページ</p></div>
+  <div class="p2"><p>アカウント詳細</p></div>
+  <div class="p3"><h2>Address</h2></div>
+  <p>{{ customer.default_address.address1 }}</p>
+  {% if customer.default_address.address2 != "" %}
+    <p>{{ customer.default_address.address2 }}</p>
+  {% endif %}
+  <p>{{ customer.default_address.city}} {% if address.province_code %}{{ customer.default_address.province_code }} {% endif %}</p>
+  <div class="p3"><p>,{{ customer.default_address.country }}</p></div>
+  <p>{{ customer.default_address.zip }}</p>
+  <p>{{ customer.default_address.phone }}</p>
+{% endif %}
+
+<div id="customer_orders">
+  <div class="p2"><p>注文履歴</p></div>
+  <div class="p3"><h2>Orders</h2></div>
+  {% paginate customer.orders by 10 %}
+  {% if customer.orders.size != 0 %}
+    {% for order in customer.orders %}
+      <!-- order details here -->
+    {% endfor %}
+  {% else %}
+  <div class="p3"><p>You haven't placed any orders yet.</p></div>
+  {% endif %}
+  {{ paginate | default_pagination }}
+  {% endpaginate %}
+  <a href="/account/logout"><div class="button"><p>ログアウト</p></div></a>
+</div>
+</div>

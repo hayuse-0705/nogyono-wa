@@ -1,0 +1,52 @@
+<div id="mycart">
+  {% if cart.item_count > 0 %}
+    <h1 class="main_title">マイカート</h1>
+    <form action="/cart" method="post" novalidate>
+      {% for item in cart.items %}
+      <div class="cart_product">
+        <a href="{{ item.url | within: collections.all }}">
+          <img class="cart-img" src="{{ item | img_url: 'medium' }}" alt="{{ item.title | escape }}">
+        </a>
+        <div class="cart_details">
+          <a href="{{ item.url }}">{{ item.product.title }}</a>
+          <!--{{ item.variant.title }}-->
+          <p class="cart_price">{{ item.price | money }}</p>
+          <p class="cart_quantity">数量
+            <input class="cart_num" type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0">
+            <!--<select name="updates[]" id="updates_{{item.key}} value="{{ item.quantity }}">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>-->
+          </p>
+
+          {% if item.original_line_price != item.line_price %}{{ item.original_line_price | money }}{% endif %}
+          <p class="cart_all_price">合計：{{ item.line_price | money }}</p>
+          {% for discount in item.discounts %}{{ discount.title }}
+          {% endfor %}
+          <a class="cart_btn cart_del" href="/cart/change?line={{ forloop.index }}&amp;quantity=0">削除</a>
+        </div>      
+      </div>
+      {% endfor %}
+      <div>
+        <p class="sub_total">総計 : {{ cart.total_price | money }}</p>
+        <div class="cart_btns">
+          <button class="cart_btn" type="submit" name="update">更新</button>
+          <button class="cart_btn" type="submit" name="checkout">購入する</button>
+        </div>
+      </div>
+    </form>
+  {% else %}
+    <h2 class="main_title">マイカート</h2>
+    <p class="cart_nothing">カートは空です。</p>
+
+  {% endif %}
+  <a a href="https://nogyo-no-wa.com/collections" class="cart-collection-link">商品一覧へ</a>
+</div>

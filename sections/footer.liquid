@@ -1,0 +1,94 @@
+<footer class="mt-5 py-2 bg-secondary text-white">
+  <div class="container">
+    <div id="footer_logo"><img src="{{ section.settings.footer_logo_img | img_url: 'master' }}" alt="{{ section.settings.image_box.alt }}"></div>
+    <div class="footer_menu d-flex align-items-center justify-content-between">
+        <ul class="footer_menu_left no_margin_buttom">
+            <!-- footer.linksでフッターメニューに指定したメニューを呼び出す -->
+            {% for link in linklists.footer.links %}
+            <li><a href="{{ link.url }}" class="text-white">{{ link.title }}</a></li>
+            {% endfor %}
+        </ul>
+        <ul class="footer_menu_right no_margin_buttom">
+            {% if section.settings.twitter != blank %}
+            <li class="sns_icon">
+                <a href="{{section.settings.twitter}}" class="text-white">
+                    <i class="fab fa-twitter">
+                        <svg id="グループ_24" data-name="グループ 24" width="100" height="100" viewBox="0 0 54.067 43.517">
+                            <defs>
+                                <clipPath id="clip-path">
+                                <rect id="長方形_88" data-name="長方形 88" width="100" height="100" fill="#fff"/>
+                                </clipPath>
+                            </defs>
+                            <g id="グループ_23" data-name="グループ 23" transform="translate(0 0)" clip-path="url(#clip-path)">
+                                <path id="パス_21" data-name="パス 21" d="M45.941,3.573s4.866-.664,6.8-2.433c0,0-1.382,4.092-4.036,5.474a13.8,13.8,0,0,0,5.64-1.05s-3.815,4.755-5.253,5.529c0,0-.892,14.933-8.312,22.747-7.377,7.768-11.715,8.841-18.169,9.637s-18.037-1.5-21.219-4.509c0,0,9.9.884,15.384-4.42,0,0-8.046-1.591-9.549-7.869h4.067S2.718,22.611,3.072,15.626a20.863,20.863,0,0,0,4.6,1.149S-.2,10.5,4.752,2.365c0,0,8.664,10.786,22.457,11.14,0,0-.8-9.195,5.924-11.936a11.66,11.66,0,0,1,12.809,2" transform="translate(-0.862 -0.309)" fill="#fff"/>
+                                <path id="パス_22" data-name="パス 22" d="M45.941,3.573s4.866-.664,6.8-2.433c0,0-1.382,4.092-4.036,5.474a13.8,13.8,0,0,0,5.64-1.05s-3.815,4.755-5.253,5.529c0,0-.892,14.933-8.312,22.747-7.377,7.768-11.715,8.841-18.169,9.637s-18.037-1.5-21.219-4.509c0,0,9.9.884,15.384-4.42,0,0-8.046-1.591-9.549-7.869h4.067S2.718,22.611,3.072,15.626a20.863,20.863,0,0,0,4.6,1.149S-.2,10.5,4.752,2.365c0,0,8.664,10.786,22.457,11.14,0,0-.8-9.195,5.924-11.936A11.66,11.66,0,0,1,45.941,3.573Z" transform="translate(-0.862 -0.309)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+                            </g>
+                        </svg>
+                    </i>
+                </a>
+            </li>
+            {% endif %}   
+
+            {% if section.settings.instagram != blank %}
+            <li class="sns_icon">
+                <a href="{{section.settings.instagram}}" class="text-white">
+                    <i class="fab fa-instagram">
+                        <svg width="100" height="100" viewBox="0 0 41.883 41.883">
+                            <defs>
+                                <clipPath id="clip-path">
+                                <rect id="長方形_146" data-name="長方形 146" width="100" height="100" fill="none"/>
+                                </clipPath>
+                            </defs>
+                            <g id="グループ_48" data-name="グループ 48" transform="translate(0 0)">
+                                <g id="グループ_47" data-name="グループ 47" transform="translate(0 0)" clip-path="url(#clip-path)">
+                                <path id="長方形_145" data-name="長方形 145" d="M7.689,0H29.243a7.689,7.689,0,0,1,7.689,7.689V29.243a7.688,7.688,0,0,1-7.688,7.688H7.689A7.689,7.689,0,0,1,0,29.242V7.689A7.689,7.689,0,0,1,7.689,0Z" transform="translate(2.475 2.476)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3.532"/>
+                                <path id="パス_37" data-name="パス 37" d="M25.8,8.066a2.485,2.485,0,1,1-2.485-2.485A2.485,2.485,0,0,1,25.8,8.066" transform="translate(8.365 2.242)" fill="#fff"/>
+                                <path id="パス_38" data-name="パス 38" d="M17.928,11.1A6.832,6.832,0,1,1,11.1,17.928,6.834,6.834,0,0,1,17.928,11.1m0-3.594A10.426,10.426,0,1,0,28.354,17.928,10.438,10.438,0,0,0,17.928,7.5" transform="translate(3.012 3.013)" fill="#fff"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </i>
+                </a>
+            </li>
+            {% endif %}
+ 
+                  
+        </ul>
+        <p class="copy_write">{{section.settings.copywrite}}</p>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+
+"name": "Footer",
+"settings":[
+{
+"type": "text",
+"id": "instagram",
+"label": "Instagram Link"
+},
+{
+"type": "text",
+"id": "facebook",
+"label": "Facebook Link"
+},
+{
+"type": "text",
+"id": "twitter",
+"label": "Twitter Link"
+},
+{
+"type": "image_picker",
+"id": "footer_logo_img",
+"label": "フッターロゴ"
+},
+{
+"type": "text",
+"id": "copywrite",
+"label": "Copy write"
+}
+]
+}
+{% endschema %}

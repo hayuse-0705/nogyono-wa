@@ -1,0 +1,197 @@
+// Put your styles in this file.
+// Note: "@import" rules aren’t supported.
+
+/****************************************************/
+
+/**   GENERAL    **/
+
+/****************************************************/
+
+body {
+  font-weight: 300;
+  font-size: 16px;
+  color: #333333;
+  position: relative;
+  min-height: 100vh;
+  font-family: Noto Sans JP,sans-serif;
+  z-index:-100;
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #333333;
+}
+
+.no_padding_horizontal {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.item_list_img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.no_margin_buttom {
+  margin-bottom: 0;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.f26 {
+  font-size: 26px;
+}
+
+.f30 {
+  font-size: 30px;
+}
+
+.f36 {
+  font-size: 36px;
+}
+
+.cover_img {
+  object-fit: cover;
+}
+
+
+.sold_out{
+  top: 20px;
+  right: 20px;
+}
+
+/****************************************************/
+
+/**   HEADER    **/
+
+/****************************************************/
+
+.drop-hover:hover>.dropdown-menu {
+  display: block !important;
+}
+
+.pc_menu {
+  display: block;
+}
+
+.tb_menu {
+  display: none;
+}
+
+/****************************************************/
+
+/**   FOOTER    **/
+
+/****************************************************/
+
+footer {
+  
+}
+
+.footer_menu ul {
+  
+}
+
+.footer_menu ul.footer_menu_left li {
+  margin-right: 20px;
+}
+
+.footer_menu ul.footer_menu_rigth li {
+  margin-left: 20px;
+}
+
+/****************************************************/
+
+/**   TOPPAGE    **/
+
+/****************************************************/
+
+.toppage_bg_img {
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/****************************************************/
+
+/**   SUBPAGE    **/
+
+/****************************************************/
+
+.subpage_bg_img {
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+}
+
+/****************************************************/
+
+/**   PRODUCT    **/
+
+/****************************************************/
+
+.product_big_img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.product_small_img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/****************************************************/
+
+/**   CART    **/
+
+/****************************************************/
+
+.cart_table td {
+  vertical-align: middle;
+}
+
+.delete_button {
+  background-color: #ffffff;
+  border: none;
+}
+
+.cart_table tr:last-child {
+  border-bottom: 1px solid #333333;
+}
+.cart_product_img{
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (max-width: 991px) {
+  .pc_menu {
+    display: none;
+  }
+  .tb_menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer_menu ul {
+    display: block;
+  }
+}
+

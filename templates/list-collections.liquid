@@ -1,0 +1,46 @@
+<div class="first_view">
+  <div class="page_fv_img_blur">{%section 'shop_fv_image'%}</div>
+  <div class="fv_title">
+    <p class="fv_tree_title">Online Shop</p>
+  </div>
+</div>
+<div class="shop_main">
+  <div class="shop_contents">
+
+          {% capture collection_title %}{{ collection.title | escape }}{% endcapture %}
+          <!--<a href="{{ collection.url }}">More {{ collection_title }} &rsaquo;</a>-->
+          {% for product in collections.frontpage.products limit:50 %}
+            {% assign grid_item_width = 'large--one-fifth medium--one-half' %}
+            <div class="product_item fadeUpTrigger">
+              <i class="product_part"></i>
+              <a href="{{ product.url | within: collection }}">
+                <div class="collection_img">
+                  <div class="variant-inventory">
+                    {% if product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity > 0 %}
+                      <!--残り在庫 {{ product.variants.first.inventory_quantity }} 個です-->
+                    {% else %}
+                      <p class="sold_out">Sold Out</p>
+                    {% endif %}
+                  </div>
+                  <img class="collection_img_src" src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">
+                </div>
+              </a>
+              <div class="shop_details">
+                <a href="{{ product.url | within: collection }}"><p class="shop_title">{{ product.title }}</p></a>
+                {% if product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity > 0 %}
+                      <p class="product_price">{{ product.price | money }}</p>
+                    {% else %}
+                      <p class="sold_out_char">Sold Out</p>
+                    {% endif %}
+                
+                <!--{% unless product.available %}<br><strong>sold out</strong>{% endunless %}-->
+              </div>  
+              <!--<div class="shop_product_details">{{ product.description }}</div>-->
+              
+            </div>
+          {% endfor %}
+
+  </div>
+</div>
+
+

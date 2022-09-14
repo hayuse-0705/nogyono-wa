@@ -1,0 +1,27 @@
+{{ section.settings.favicon | img_url: 'master' }}
+
+{% schema %}
+  {
+  "name": "ファビコン",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "favicon",
+      "label": "画像を選ぶ"
+    }
+  ],
+
+"presets": [
+   {
+     "name": "テスト画像",
+     "category": "画像"
+   }
+ ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

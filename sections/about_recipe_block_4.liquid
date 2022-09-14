@@ -1,0 +1,53 @@
+{% for block in section.blocks limit: section.blocks.size %}
+            {% assign get_sec_image = true %}
+                <div class="recipe_block fadeUpTrigger">
+                    <img class="recipe_block_img" src="{{block.settings.image | img_url:' master '}}">
+                    <!--<img class="top_news_img" src="{{ block.settings.image_picker | image_url: "master "}}" alt="">-->
+                    <div class="recipe_details">
+                      <h3 class="recipe-title">{{ block.settings.recipe-title }} </h3>
+                      <p class="recipe_detail">{{ block.settings.recipe-detail }}</p>
+                    </div>
+                </div>
+{% endfor %}
+
+
+{% schema %}
+{
+  "name": {
+    "ja": "recipe_section"
+  },
+  "class": "recipe_section",
+  "blocks": [
+    {
+      "type": "custom",
+      "name": {
+        "ja": "レシピ"
+      },
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+            "ja": "画像"
+          }
+        },
+        {
+          "type": "text",
+          "id": "recipe-title",
+          "label":{
+              "ja": "レシピタイトル"
+          }
+        },
+        {
+          "type": "richtext",
+          "id": "recipe-detail",
+          "label":{
+              "ja": "レシピ"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

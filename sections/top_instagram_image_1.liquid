@@ -1,0 +1,47 @@
+<div class="instagram_images fadeUpTrigger">
+  {% for block in section.blocks limit: section.blocks.size %}
+          {% if block.settings.image != blank %}
+            {% assign get_sec_image = true %}
+            <a href="{{ block.settings.insta_url }}">
+                <div class="insta_block">
+                    <img class="insta_image_src" src="{{ block.settings.image | img_url: " master "}}" alt="{{ section.settings.image.alt }}">
+                    <!--{{ block.settings.insta_images | img_url: '300×' | img_tag }}-->
+                </div>
+            </a>
+          {% endif %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": {
+    "ja": "Instagram_section"
+  },
+  "class": "sample_section",
+  "blocks": [
+    {
+      "type": "custom",
+      "name": {
+        "ja": "インスタグラム記事"
+      },
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": {
+            "ja": "画像"
+          }
+        },
+        {
+            "type": "url",
+            "id": "insta_url",
+            "label":{
+                "ja": "url"
+            }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,66 @@
+<div id="loading">
+</div>
+<div class="page_over"> 
+  <div id="first_view">
+      <div class="page_fv_img">{%section 'first_view_img'%}</div>
+      <div class="on_img">{%section 'fv_on_img'%}</div>
+  </div>
+  <div class="back-black" id="concept">
+    <div>
+      <div class="top_about_wrapp">
+        <div class="top_about_left fadeUpTrigger">
+          <p class="top_concept_char">食は、人を幸せにする。</p>
+          <p class="concept_char">幸せを。あなたのもとに。</p>
+          <p class="concept_char">つながる。農業の<strong>WA</strong>。</p>
+        </div>     
+        <div class="top_about_right">
+          <div class="top_about_image_square fadeUpTrigger">{%section 'top_about_image'%}</div>
+          <div class="top_about_image_square fadeUpTrigger">{%section 'top_about_image1'%}</div>
+          <div class="top_about_image_square fadeUpTrigger">{%section 'top_about_image2'%}</div>
+        </div>
+      </div>
+      <div class="top_content">
+        {%section 'about_btn_link' %}
+      </div>
+    </div>
+  </div>
+  <div class="back-cream" id="section_pick_up">
+      <p class='section_title fadeUpTrigger'>PICK UP</p>
+      <div class="roll_content">
+        <ul class="slider">
+          {% for product in collections.pick_up.products limit:6 %}
+            <li class='roll_item fadeUpTrigger'>
+              <a href="{{ product.url | within: collection }}">
+                <img class="top_roll_img" src="{{ product.featured_image.src | img_url: 'large' }}" alt="{{ product.featured_image.alt | escape }}">  
+                <div class="roll_details">
+                    <i>{{ product.title }}</i>
+                    <p>{{ product.price | money }}</p>
+                    {% unless product.available %}<br><strong>sold out</strong>{% endunless %}
+                </div>
+              </a>   
+            </li>
+          {% endfor %}
+        </ul>
+        <!--<div id="credit">Photography by Trey Ratcliff<br>Slide No.<span id="count">1</span><br><span id="zoom">zoom</span></div>-->
+      </div>
+      <div class="top_content shop_btn">
+        {%section 'shop_btn_link' %}
+      </div>
+  </div>
+    <div id="section_news" class="back-gray">
+      <div class="top_content">
+        <p class='section_title fadeUpTrigger'>NEWS</p>
+        <div id="top_news fadeUpTrigger">
+          {%section 'top_news_blocks'%}
+        </div>
+      </div>
+      <div class="">
+        {%section 'news_btn_link' %}
+      </div>
+    </div>
+  <div id="instagram" class="back-white">
+    <p class='section_title fadeUpTrigger'>Instagram</p>
+    <div id="insta-feed" class="fadeUpTrigger"></div>
+    <!--{%section 'top_instagram_image_test' %}-->
+  </div>
+</div>

@@ -1,0 +1,311 @@
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "top_url": "https:\/\/nogyo-no-wa.com\/",
+          "twitter": "https:\/\/twitter.com\/@nogyo_no_wa",
+          "instagram": "https:\/\/www.instagram.com\/nogyo_no_wa\/"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "instagram": "https:\/\/www.instagram.com\/nogyo_no_wa\/",
+          "facebook": "#",
+          "twitter": "https:\/\/twitter.com\/nogyo_no_wa",
+          "copywrite": "©︎NOGYO NO WA"
+        }
+      },
+      "first_view_img": {
+        "type": "first_view_img",
+        "settings": {}
+      },
+      "fv_on_img": {
+        "type": "fv_on_img",
+        "settings": {}
+      },
+      "about_image_1": {
+        "type": "about_image_1",
+        "settings": {
+          "about_image_1": "shopify:\/\/shop_images\/IMG_0003_3.jpg"
+        }
+      },
+      "top_instagram_image_1": {
+        "type": "top_instagram_image_1",
+        "blocks": {
+          "f30ccf6f-12ef-45ee-89b4-7d1925337e01": {
+            "type": "custom",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+              "insta_url": ""
+            }
+          },
+          "9783c6eb-d92e-4eac-8eae-209452b13571": {
+            "type": "custom",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_2348.jpg",
+              "insta_url": ""
+            }
+          },
+          "5052aace-47ab-4ebe-a21f-a6979fe3a97e": {
+            "type": "custom",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_2352.jpg",
+              "insta_url": ""
+            }
+          },
+          "e0d84fb1-1f7c-4236-838f-f9b337a9a7fb": {
+            "type": "custom",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_1808.jpg",
+              "insta_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "f30ccf6f-12ef-45ee-89b4-7d1925337e01",
+          "9783c6eb-d92e-4eac-8eae-209452b13571",
+          "5052aace-47ab-4ebe-a21f-a6979fe3a97e",
+          "e0d84fb1-1f7c-4236-838f-f9b337a9a7fb"
+        ],
+        "settings": {}
+      },
+      "shop_fv_image": {
+        "type": "shop_fv_image",
+        "settings": {
+          "shop_fv_img": "shopify:\/\/shop_images\/IMG-0119.jpg"
+        }
+      },
+      "about_image_2": {
+        "type": "about_image_2",
+        "settings": {
+          "about_image_2": "shopify:\/\/shop_images\/IMG_0012.jpg"
+        }
+      },
+      "about_btn_link": {
+        "type": "about_btn_link",
+        "settings": {
+          "about_btn_title": "ABOUT",
+          "about_btn_url": "shopify:\/\/pages\/about"
+        }
+      },
+      "shop_btn_link": {
+        "type": "shop_btn_link",
+        "settings": {
+          "shop_btn_title": "SHOP一覧へ",
+          "shop_btn_url": "shopify:\/\/collections"
+        }
+      },
+      "news_btn_link": {
+        "type": "news_btn_link",
+        "settings": {
+          "news_btn_title": "View more",
+          "news_btn_url": "shopify:\/\/pages\/news"
+        }
+      },
+      "top_about_image": {
+        "type": "top_about_image",
+        "settings": {}
+      },
+      "top_news_blocks": {
+        "type": "top_news_blocks",
+        "blocks": {
+          "2e44c1b4-8f55-4bcb-b9e7-d99d186769df": {
+            "type": "custom",
+            "settings": {
+              "news_date": "2022\/5\/15",
+              "news_title": "昨年度の実績\/Makuake掲載＆目標達成！！",
+              "news_url": "shopify:\/\/pages\/昨年度の実績-makuakeke掲載-目標達成"
+            }
+          },
+          "2f4b820e-8e5c-46a5-9a28-642f92172784": {
+            "type": "custom",
+            "settings": {
+              "news_date": "2022\/5\/14",
+              "news_title": "オンラインストア『農業のWA』がリリースされました。",
+              "news_url": "shopify:\/\/pages\/ニューステスト"
+            }
+          }
+        },
+        "block_order": [
+          "2e44c1b4-8f55-4bcb-b9e7-d99d186769df",
+          "2f4b820e-8e5c-46a5-9a28-642f92172784"
+        ],
+        "settings": {}
+      },
+      "top_about_image1": {
+        "type": "top_about_image1",
+        "settings": {}
+      },
+      "top_about_image2": {
+        "type": "top_about_image2",
+        "settings": {}
+      },
+      "about_image_3": {
+        "type": "about_image_3",
+        "settings": {
+          "about_image_3": "shopify:\/\/shop_images\/IMG_0002_5.jpg"
+        }
+      },
+      "about_image_4": {
+        "type": "about_image_4",
+        "settings": {
+          "about_image_4": "shopify:\/\/shop_images\/IMG_0002_1_sm.jpg"
+        }
+      },
+      "about_recipe_block_1": {
+        "type": "about_recipe_block_1",
+        "blocks": {
+          "22a138ca-f758-487c-ab62-c24d0e89cbf2": {
+            "type": "custom",
+            "settings": {
+              "recipe-title": "常温",
+              "recipe-detail": "<p>お手元に届いた箱からすぐに１粒を皮をむいて口の中に入れると、上品な香りと甘みが引き立つ。<\/p>"
+            }
+          },
+          "b51df015-45a2-4e8f-a478-d9d0a3d64d56": {
+            "type": "custom",
+            "settings": {
+              "recipe-title": "冷凍(半解凍)",
+              "recipe-detail": "<p>冷凍庫から出して常温に１０分程置いておくと半解凍のシャーベット状に。<\/p><p>外側はとろっとやわらかく、中はシャリッとした食感が楽しめます。<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "22a138ca-f758-487c-ab62-c24d0e89cbf2",
+          "b51df015-45a2-4e8f-a478-d9d0a3d64d56"
+        ],
+        "settings": {}
+      },
+      "news_block": {
+        "type": "news_block",
+        "blocks": {
+          "2657bf76-5275-49d0-ad49-61562197f2c2": {
+            "type": "custom",
+            "settings": {
+              "news_date": "2022\/5\/15",
+              "news_title": "昨年度の実績\/Makuake掲載＆目標達成！！",
+              "news_url": "shopify:\/\/pages\/昨年度の実績-makuakeke掲載-目標達成"
+            }
+          },
+          "10b2a5cc-c579-4a51-a8d6-74da3ea8c285": {
+            "type": "custom",
+            "settings": {
+              "news_date": "2022\/5\/15",
+              "news_title": "オンラインストア『農業のWA』がリリースされました。",
+              "news_url": "shopify:\/\/pages\/ニューステスト"
+            }
+          }
+        },
+        "block_order": [
+          "2657bf76-5275-49d0-ad49-61562197f2c2",
+          "10b2a5cc-c579-4a51-a8d6-74da3ea8c285"
+        ],
+        "settings": {}
+      },
+      "top_instagram_image_test": {
+        "type": "top_instagram_image_test",
+        "settings": {
+          "insta_url_1": "",
+          "insta_url_2": "",
+          "insta_url_3": "",
+          "insta_url_4": ""
+        }
+      },
+      "FAQ_blocks": {
+        "type": "FAQ_blocks",
+        "blocks": {
+          "e78b3369-2ed6-4c69-9b2d-e2747fb7ae7f": {
+            "type": "custom",
+            "settings": {
+              "faq_question": "商品等の最新情報はどこで入手できますか？",
+              "faq_answer": "SNS等で随時、最新情報やお得情報をご確認できます。"
+            }
+          },
+          "1e62f505-8357-4cf4-a647-ff921d09ab9d": {
+            "type": "custom",
+            "settings": {
+              "faq_question": "熨斗(のし)はつけてもらえますか？",
+              "faq_answer": "ご希望の場合は別途料金がかかりますが対応しております。(詳細はお問合せフォームから連絡ください。)"
+            }
+          }
+        },
+        "block_order": [
+          "e78b3369-2ed6-4c69-9b2d-e2747fb7ae7f",
+          "1e62f505-8357-4cf4-a647-ff921d09ab9d"
+        ],
+        "settings": {}
+      },
+      "about_recipe_block_2": {
+        "type": "about_recipe_block_2",
+        "blocks": {
+          "23660c40-9c3f-4583-aa40-eb42054ea6e4": {
+            "type": "custom",
+            "settings": {
+              "recipe-title": "常温",
+              "recipe-detail": "<p>お手元に届いた箱から１粒を皮ごと口の中に入れると、甘さと香りとジューシーさが味わえます。<\/p>"
+            }
+          },
+          "a3372646-38f1-4b78-9411-5355bff1b64a": {
+            "type": "custom",
+            "settings": {
+              "recipe-title": "冷蔵",
+              "recipe-detail": "<p>冷蔵庫の中から出して１粒を口の中に入れると、ひんやりとした爽やかな味わいで、違った風味も楽しめます。<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "23660c40-9c3f-4583-aa40-eb42054ea6e4",
+          "a3372646-38f1-4b78-9411-5355bff1b64a"
+        ],
+        "settings": {}
+      },
+      "about_recipe_block_3": {
+        "type": "about_recipe_block_3",
+        "blocks": {
+          "e8d48276-511f-4244-99f2-8bb1d629ed1e": {
+            "type": "custom",
+            "settings": {
+              "recipe-title": "常温",
+              "recipe-detail": "<p>お手元に届いた箱から１つ手に取り皮をむいて丸ごとかじりつくと滴り落ちるほどの果汁と、口いっぱいに広がる香り味わいを存分に楽しめます。<\/p>"
+            }
+          },
+          "672a4c6f-eeea-4837-b856-548cf9a2c23c": {
+            "type": "custom",
+            "settings": {
+              "recipe-title": "氷水につけて５分",
+              "recipe-detail": "<p>白桃の香りは保たれて、ほどよく冷えて甘みが増し上品な味わいを楽しめます。<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "e8d48276-511f-4244-99f2-8bb1d629ed1e",
+          "672a4c6f-eeea-4837-b856-548cf9a2c23c"
+        ],
+        "settings": {}
+      },
+      "about_recipe_block_4": {
+        "type": "about_recipe_block_4",
+        "blocks": {
+          "ff40a0be-9d18-4f65-b043-ed3060f39369": {
+            "type": "custom",
+            "settings": {
+              "recipe-title": "常温",
+              "recipe-detail": "<p>お手元に届いた箱から１つ手に取り皮をむいて丸ごとかじりつくと、とてもジューシーで、甘みも強く濃厚な美味しさが楽しめます。<\/p><p>さらに常温で追熟させると甘くなり濃厚な味わいとなります。<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "ff40a0be-9d18-4f65-b043-ed3060f39369"
+        ],
+        "settings": {}
+      }
+    },
+    "content_for_index": []
+  },
+  "presets": {
+    "Default": {}
+  }
+}

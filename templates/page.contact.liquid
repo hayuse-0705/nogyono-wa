@@ -1,0 +1,16 @@
+<div class="page_wrapp">
+<h1 class="main_title">{{ page.title }}</h1>
+{% form 'contact' %}
+  {% if form.posted_successfully? %} Thank you for your contact {% endif %}
+  {{ form.errors | default_errors }}
+  <label class="login_tag" for="ContactFormName">お名前(必須）</label><br>
+  <input class="login_tag_form" type="text" id="ContactFormName" name="contact[name]" required><br>
+  <label class="login_tag" for="ContactFormEmail">メールアドレス（必須）</label><br>
+  <input class="login_tag_form" type="email" id="ContactFormEmail" name="contact[email]" required><br>
+  <label class="login_tag" for="ContactFormPhone">電話番号</label><br>
+  <input class="login_tag_form" type="tel" id="ContactFormPhone" name="contact[phone]"><br>
+  <label class="login_tag" for="ContactFormMessage">お問い合わせ内容(必須)</label><br>
+  <textarea class="contact_form_detail" rows="10" id="ContactFormMessage" name="contact[body]" required></textarea><br>
+  <input class="sign_in_btn" type="submit" value="送信">
+{% endform %}
+</div>

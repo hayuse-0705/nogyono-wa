@@ -1,0 +1,21 @@
+<img class="shop_fv_image fadeUpTrigger" src="{{ section.settings.shop_fv_img | img_url: 'master' }}" alt="{{ section.settings.shop_fv_img.alt }}">
+
+{% schema %}
+{
+ "name": "ショップトップ画像",
+ "settings": [
+  {
+   "type": "image_picker",
+   "id": "shop_fv_img",
+   "label": "画像を選ぶ"
+  }
+ ],
+
+"presets": [
+  {
+   "name": "テスト画像",
+   "category": "画像"
+  }
+ ]
+}
+{% endschema %}

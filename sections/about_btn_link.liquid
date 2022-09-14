@@ -1,0 +1,26 @@
+<a href="{{section.settings.about_btn_url}}"><p class=" btn_black top_btn fadeUpTrigger">{{section.settings.about_btn_title}}</p></a>
+
+{% schema %}
+{
+ "name": "ABOUT_BTN_SETUP",
+ "settings": [
+  {
+   "type": "text",
+   "id": "about_btn_title",
+   "label": "about_btn_title"
+  },
+  {
+    "type" : "url",
+    "id" : "about_btn_url",
+    "label" : "about_btn_link"
+  }
+ ],
+
+"presets": [
+  {
+   "name": "ボタン設定",
+   "category": "ボタン"
+  }
+ ]
+}
+{% endschema %}

@@ -1,0 +1,22 @@
+<!-- /templates/customers/register.liquid -->
+<div id="registar_forms">
+{% form 'create_customer' %}
+
+{{ form.errors | default_errors }}
+<h1 id="registar_title">アカウントを作成</h1>
+<label class="registar_tag" for="first_name">名前</label><br>
+<input class="registar_tag_form" type="text" value="" name="customer[first_name]" size="30" /><br>
+
+<label class="registar_tag" for="last_name">苗字</label><br>
+<input class="registar_tag_form" type="text" value="" name="customer[last_name]" size="30" /><br>
+
+<label class="registar_tag" for="email">メールアドレス</label><br>
+<input class="registar_tag_form" type="email" value="" name="customer[email]" size="30" /><br>
+
+<label class="registar_tag" for="password">パスワード</label><br>
+<input class="registar_tag_form" type="password" value="" name="customer[password]" size="30" /><br>
+
+<input class="creat_btn" type="submit" value="アカウント作成" />
+
+{% endform %}
+</div>

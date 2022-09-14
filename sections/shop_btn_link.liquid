@@ -1,0 +1,26 @@
+<a href="{{section.settings.shop_btn_url}}"><p class="top_btn btn_black fadeUpTrigger">{{section.settings.shop_btn_title}}</p></a>
+
+{% schema %}
+{
+ "name": "SHOP_BTN_SETUP",
+ "settings": [
+  {
+   "type": "text",
+   "id": "shop_btn_title",
+   "label": "shop_btn_title"
+  },
+  {
+    "type" : "url",
+    "id" : "shop_btn_url",
+    "label" : "shop_btn_link"
+  }
+ ],
+
+"presets": [
+  {
+   "name": "ボタン設定",
+   "category": "ボタン"
+  }
+ ]
+}
+{% endschema %}

@@ -1,0 +1,27 @@
+<img class="about_top_img" src="{{ section.settings.about_image_1 | img_url: 'master' }}" alt="{{ section.settings.about_image_1.alt }}">
+
+{% schema %}
+  {
+  "name": "画像ボックス",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "about_image_1",
+      "label": "画像を選ぶ"
+    }
+  ],
+
+"presets": [
+   {
+     "name": "テスト画像",
+     "category": "画像"
+   }
+ ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

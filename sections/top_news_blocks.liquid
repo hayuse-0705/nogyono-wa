@@ -1,0 +1,52 @@
+{% for block in section.blocks limit: section.blocks.size %}
+            {% assign get_sec_image = true %}
+            <a href="{{ block.settings.news_url }}">
+                <div class="news_block fadeUpTrigger">
+                    <p class="news_block_date">{{ block.settings.news_date }}</p>
+                    <!--<img class="top_news_img" src="{{ block.settings.image_picker | image_url: "master "}}" alt="">-->
+                    <p class="news_title">{{ block.settings.news_title }}</p>
+                </div>
+            </a>
+{% endfor %}
+
+
+{% schema %}
+{
+  "name": {
+    "ja": "news_section"
+  },
+  "class": "sample_section",
+  "blocks": [
+    {
+      "type": "custom",
+      "name": {
+        "ja": "news記事"
+      },
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "news_date",
+          "label": {
+            "ja": "日付"
+          }
+        },
+        {
+          "type": "text",
+          "id": "news_title",
+          "label":{
+              "ja": "news_title"
+          }
+        },
+        {
+            "type": "url",
+            "id": "news_url",
+            "label":{
+                "ja": "url"
+            }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,41 @@
+{% for block in section.blocks limit: section.blocks.size %}
+                <div class="FAQ_block fadeUpTrigger">
+                    <p class="question">{{ block.settings.faq_question }}</p>
+                    <p class="answer">{{ block.settings.faq_answer }}</p>
+                </div>
+{% endfor %}
+
+
+{% schema %}
+{
+  "name": {
+    "ja": "FAQ_section"
+  },
+  "class": "sample_section",
+  "blocks": [
+    {
+      "type": "custom",
+      "name": {
+        "ja": "FAQ記事"
+      },
+      "limit":50 ,
+      "settings": [
+        {
+          "type": "text",
+          "id": "faq_question",
+          "label": {
+            "ja": "質問（Q）"
+          }
+        },
+        {
+          "type": "text",
+          "id": "faq_answer",
+          "label":{
+              "ja": "答え（A）"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,21 @@
+<img class="top_fv_logo fadeUpTrigger" src="{{ section.settings.logo_img | img_url: 'master' }}" alt="{{ section.settings.logo_img.alt }}">
+
+{% schema %}
+{
+ "name": "ロゴを変更",
+ "settings": [
+  {
+   "type": "image_picker",
+   "id": "logo_img",
+   "label": "画像を選ぶ"
+  }
+ ],
+
+"presets": [
+  {
+   "name": "テスト画像",
+   "category": "画像"
+  }
+ ]
+}
+{% endschema %}

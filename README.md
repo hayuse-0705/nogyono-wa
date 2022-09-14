@@ -1,1 +1,1 @@
-# nogyono-wa
+# shopify-theme

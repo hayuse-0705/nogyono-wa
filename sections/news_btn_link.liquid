@@ -1,0 +1,26 @@
+<a href="{{section.settings.news_btn_url}}"><p class="top_btn btn_black fadeUpTrigger news_btn_margin">{{section.settings.news_btn_title}}</p></a>
+
+{% schema %}
+{
+ "name": "BTN_SETUP",
+ "settings": [
+  {
+   "type": "text",
+   "id": "news_btn_title",
+   "label": "news_btn_title"
+  },
+  {
+    "type" : "url",
+    "id" : "news_btn_url",
+    "label" : "news_btn_link"
+  }
+ ],
+
+"presets": [
+  {
+   "name": "テスト画像",
+   "category": "画像"
+  }
+ ]
+}
+{% endschema %}

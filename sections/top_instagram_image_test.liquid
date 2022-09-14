@@ -1,0 +1,66 @@
+<div class="instagram_images fadeUpTrigger">
+  <a href="{{ section.settings.insta_url_1 }}"><img class="insta_img_src" src="{{ section.settings.insta_image_1 | img_url: 'master' }}" alt="{{ section.settings.insta_image_1.alt }}"></a>
+  <a href="{{ section.settings.insta_url_2 }}"><img class="insta_img_src" src="{{ section.settings.insta_image_2 | img_url: 'master' }}" alt="{{ section.settings.insta_image_2.alt }}"></a>
+  <a href="{{ section.settings.insta_url_3 }}"><img class="insta_img_src" src="{{ section.settings.insta_image_3 | img_url: 'master' }}" alt="{{ section.settings.insta_image_3.alt }}"></a>
+  <a href="{{ section.settings.insta_url_4 }}"><img class="insta_img_src" src="{{ section.settings.insta_image_4 | img_url: 'master' }}" alt="{{ section.settings.insta_image_4.alt }}"></a>
+</div>
+{% schema %}
+  {
+  "name": "Instagram_section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "insta_image_1",
+      "label": "画像を配置"
+    },
+    {
+      "type": "url",
+      "id": "insta_url_1",
+      "label": "url"
+    },
+    {
+      "type": "image_picker",
+      "id": "insta_image_2",
+      "label": "画像を配置"
+    },
+    {
+      "type": "url",
+      "id": "insta_url_2",
+      "label": "url"
+    },
+    {
+      "type": "image_picker",
+      "id": "insta_image_3",
+      "label": "画像を配置"
+    },
+    {
+      "type": "url",
+      "id": "insta_url_3",
+      "label": "url"
+    },
+    {
+      "type": "image_picker",
+      "id": "insta_image_4",
+      "label": "画像を配置"
+    },
+    {
+      "type": "url",
+      "id": "insta_url_4",
+      "label": "url"
+    }
+  ],
+
+"presets": [
+   {
+     "name": "テスト画像",
+     "category": "画像"
+   }
+ ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

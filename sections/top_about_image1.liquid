@@ -1,0 +1,27 @@
+<img class="top_about_image top_about_middle" src="{{ section.settings.top_about_image | img_url: 'master' }}" alt="{{ section.settings.top_about_image.alt }}">
+
+{% schema %}
+  {
+  "name": "about_back",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "top_about_image",
+      "label": "top_about"
+    }
+  ],
+
+"presets": [
+   {
+     "name": "テスト画像",
+     "category": "画像"
+   }
+ ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

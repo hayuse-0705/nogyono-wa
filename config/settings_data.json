@@ -4,7 +4,9 @@
       "header": {
         "type": "header",
         "settings": {
+          "image_box": "shopify:\/\/shop_images\/IMG_0003_3.jpg",
           "top_url": "https:\/\/nogyo-no-wa.com\/",
+          "menu_logo": "shopify:\/\/shop_images\/IMG_0002_4.jpg",
           "twitter": "https:\/\/twitter.com\/@nogyo_no_wa",
           "instagram": "https:\/\/www.instagram.com\/nogyo_no_wa\/"
         }
@@ -20,11 +22,13 @@
       },
       "first_view_img": {
         "type": "first_view_img",
-        "settings": {}
+        "settings": {
+        }
       },
       "fv_on_img": {
         "type": "fv_on_img",
-        "settings": {}
+        "settings": {
+        }
       },
       "about_image_1": {
         "type": "about_image_1",
@@ -70,7 +74,8 @@
           "5052aace-47ab-4ebe-a21f-a6979fe3a97e",
           "e0d84fb1-1f7c-4236-838f-f9b337a9a7fb"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "shop_fv_image": {
         "type": "shop_fv_image",
@@ -107,7 +112,8 @@
       },
       "top_about_image": {
         "type": "top_about_image",
-        "settings": {}
+        "settings": {
+        }
       },
       "top_news_blocks": {
         "type": "top_news_blocks",
@@ -133,15 +139,18 @@
           "2e44c1b4-8f55-4bcb-b9e7-d99d186769df",
           "2f4b820e-8e5c-46a5-9a28-642f92172784"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "top_about_image1": {
         "type": "top_about_image1",
-        "settings": {}
+        "settings": {
+        }
       },
       "top_about_image2": {
         "type": "top_about_image2",
-        "settings": {}
+        "settings": {
+        }
       },
       "about_image_3": {
         "type": "about_image_3",
@@ -177,7 +186,8 @@
           "22a138ca-f758-487c-ab62-c24d0e89cbf2",
           "b51df015-45a2-4e8f-a478-d9d0a3d64d56"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "news_block": {
         "type": "news_block",
@@ -203,7 +213,8 @@
           "2657bf76-5275-49d0-ad49-61562197f2c2",
           "10b2a5cc-c579-4a51-a8d6-74da3ea8c285"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "top_instagram_image_test": {
         "type": "top_instagram_image_test",
@@ -236,7 +247,8 @@
           "e78b3369-2ed6-4c69-9b2d-e2747fb7ae7f",
           "1e62f505-8357-4cf4-a647-ff921d09ab9d"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "about_recipe_block_2": {
         "type": "about_recipe_block_2",
@@ -260,7 +272,8 @@
           "23660c40-9c3f-4583-aa40-eb42054ea6e4",
           "a3372646-38f1-4b78-9411-5355bff1b64a"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "about_recipe_block_3": {
         "type": "about_recipe_block_3",
@@ -284,7 +297,8 @@
           "e8d48276-511f-4244-99f2-8bb1d629ed1e",
           "672a4c6f-eeea-4837-b856-548cf9a2c23c"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "about_recipe_block_4": {
         "type": "about_recipe_block_4",
@@ -300,12 +314,16 @@
         "block_order": [
           "ff40a0be-9d18-4f65-b043-ed3060f39369"
         ],
-        "settings": {}
+        "settings": {
+        }
       }
     },
-    "content_for_index": []
+    "content_for_index": [
+
+    ]
   },
   "presets": {
-    "Default": {}
+    "Default": {
+    }
   }
 }

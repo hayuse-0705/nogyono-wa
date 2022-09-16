@@ -4,8 +4,9 @@
       "header": {
         "type": "header",
         "settings": {
-          "image_box": "shopify:\/\/shop_images\/IMG_0003_3.jpg",
+          "image_box": "shopify:\/\/shop_images\/wa_logo.webp",
           "top_url": "https:\/\/nogyo-no-wa.com\/",
+          "menu_logo": "shopify:\/\/shop_images\/wa_logo.webp",
           "twitter": "https:\/\/twitter.com\/@nogyo_no_wa",
           "instagram": "https:\/\/www.instagram.com\/nogyo_no_wa\/"
         }

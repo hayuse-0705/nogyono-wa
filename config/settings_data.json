@@ -114,6 +114,7 @@
       "top_about_image": {
         "type": "top_about_image",
         "settings": {
+          "top_about_image": "shopify:\/\/shop_images\/IMG_0004_4.jpg"
         }
       },
       "top_news_blocks": {

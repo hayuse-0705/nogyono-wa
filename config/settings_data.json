@@ -28,6 +28,7 @@
       "fv_on_img": {
         "type": "fv_on_img",
         "settings": {
+          "logo_img": "shopify:\/\/shop_images\/foodnogyo_logo.webp"
         }
       },
       "about_image_1": {

@@ -147,6 +147,7 @@
       "top_about_image1": {
         "type": "top_about_image1",
         "settings": {
+          "top_about_image": "shopify:\/\/shop_images\/IMG_0009_1.jpg"
         }
       },
       "top_about_image2": {

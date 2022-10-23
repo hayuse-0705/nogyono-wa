@@ -24,6 +24,7 @@
       "first_view_img": {
         "type": "first_view_img",
         "settings": {
+          "image_box": "shopify:\/\/shop_images\/first_view.png"
         }
       },
       "fv_on_img": {

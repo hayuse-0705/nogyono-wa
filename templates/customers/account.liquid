@@ -29,5 +29,59 @@
   {{ paginate | default_pagination }}
   {% endpaginate %}
   <a href="/account/logout"><div class="button"><p>ログアウト</p></div></a>
+ {% assign chatboost_redirect_url = "https://cb-admin.hassyadai.com/admin/line-login-callback" %}
+{% assign current_url = "https://" | append: request.host | append: request.path %}
+{% assign stateParams = "shop_domain^" | append: shop.permanent_domain | append: "|" %}
+{% assign stateParams = stateParams | append: "shopify_id^" | append: customer.id  | append: "|" %}
+{% assign stateParams = stateParams | append: "email^" | append: customer.email  | append: "|" %}
+{% assign stateParams = stateParams | append: "redirect_url^" | append: current_url | append: "|" %}
+{% assign stateParams = stateParams | append: "type^" | append: "link_customer_to_cb_from_shopify" %}
+{% assign stateParams = stateParams | base64_encode %}
+{% assign client_id = "1660792132" %}
+{%- comment -%}
+client_idを任意のline_login_channel_idに変更する
+{%- endcomment -%}
+
+{%- if customer -%}
+  <div style="display:flex;justify-content:center;">
+    <a
+      style="
+        display: block;
+        background: #00b900;
+        color: #FFFFFF;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: rgb(0 0 0 / 40%) 1px 1px 5px;
+        padding: 10px 18px;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid transparent;
+        text-decoration: none;
+        width: 300px;"
+        href="https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id={{client_id}}&redirect_uri={{chatboost_redirect_url}}&state={{stateParams}}&bot_prompt=aggressive&scope=profile">
+      LINE連携
+    </a>
+  </div>
+{%- else -%}
+  <div style="display:flex;justify-content:center;">
+    <a
+      style="
+        display: block;
+        background: #00b900;
+        color: #FFFFFF;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: rgb(0 0 0 / 40%) 1px 1px 5px;
+        padding: 10px 18px;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid transparent;
+        text-decoration: none;
+        width:300px;"
+      href="https://{{ shop.domain }}/account/login">
+      ログイン
+    </a>
+  </div>
+{%- endif -%}
 </div>
 </div>

@@ -1,0 +1,11 @@
+#news_title{
+    font-size:1.5rem;
+    letter-spacing:5px;
+    text-align:center;
+    padding:10px 0;
+    margin:100px auto;
+    font-weight:100;
+    width:300px;
+    border-bottom:1px solid #dedede;
+    border-top:1px solid #dedede;
+}

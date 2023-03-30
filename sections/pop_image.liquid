@@ -1,0 +1,176 @@
+<div class="line_pop " style="background-color:{{section.settings.pop_back_color}}">
+  <div class="line_pop_close_btn close_func"></div>
+  <div class="line_pop_content">
+    <div class="pop_image_area"><img class="pop_image" src="{{ section.settings.logo_img | img_url: 'master' }}" alt="{{ section.settings.logo_img.alt }}"></div>
+    <a class="line_pop_btn" style="color: {{ section.settings.pop_btn_text_color }}; background-color:{{section.settings.pop_btn_back_color}}" href="{{ section.settings.pop_btn_url }}">{{ section.settings.pop_btn_text }}</a>
+    <p class="line_pop_text" style="color:{{ section.settings.pop_btn_desc_color }}">{{ section.settings.pop_btn_desc_text }}</p>
+  </div>
+</div>
+<div class="back-overlay close_func"></div>
+
+
+
+{% schema %}
+{
+ "name": "pop広告編集",
+ "settings": [
+  {
+    "type": "color",
+    "id": "pop_back_color",
+    "label": "ポップの背景色を選択",
+    "default":"#fff"
+   },
+  {
+   "type": "image_picker",
+   "id": "logo_img",
+   "label": "画像を選ぶ"
+  },
+  {
+    "type": "text",
+    "id": "pop_btn_text",
+    "label": "ポップボタンのテキストを入力"
+   },
+   {
+    "type": "color",
+    "id": "pop_btn_text_color",
+    "label": "ボタンのテキストカラーを選択",
+    "default":"#fff"
+   },
+   {
+    "type": "color",
+    "id": "pop_btn_back_color",
+    "label": "ボタンのカラーを選択",
+    "default":"#008000"
+   },
+   {
+    "type": "url",
+    "id": "pop_btn_url",
+    "label": "ポップボタンのリンク先を入力"
+   },
+   {
+    "type": "text",
+    "id": "pop_btn_desc_text",
+    "label": "説明テキストを入力"
+   },
+   {
+    "type": "color",
+    "id": "pop_btn_desc_color",
+    "label": "説明テキストのカラーを選択",
+    "default":"#000"
+   }
+ ],
+
+"presets": [
+  {
+   "name": "テスト画像",
+   "category": "画像"
+  }
+ ]
+}
+{% endschema %}
+
+{% stylesheet %}
+.line_pop{
+    display:none;
+}
+@media screen and (max-width: 991px) {
+.line_pop{
+        width:85%;
+        height:370px;
+        display:flex;
+        position:fixed;
+        z-index:101;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-60%);
+        background-color:rgba(255,255,255,0.95);
+        align-items:center;
+    }
+    .line_pop_text{
+        color:#222;
+        font-size:  0.8rem;
+    }
+    .line_pop_btn{
+        /* color:; */
+        /* background-color:#008000; */
+        padding: 10px 0px;
+        border-radius:5px;
+        text-align:center;
+        width:90%;
+        font-size:0.8rem
+    }
+    .line_pop_close_btn{
+        position:absolute;
+        width:30px;
+        height:30px;
+        display:inline-block;
+        right:0%;
+        top:0%;
+        transform: translate(50%,-50%);
+        background-color: #5f5f5f;
+        border-radius: 50%;
+    }
+
+    .line_pop_close_btn::before{
+        content:'';
+        position:absolute;
+        top:50%;
+        left:50%;
+        background-color:#fff;
+        width:50%;
+        height:2px;
+        border-radius:10px;
+        transform-origin:center center;
+        transform:translate(-50%,-50%) rotate(45deg);
+
+    }
+    .line_pop_close_btn::after{
+        content:'';
+        position:absolute;
+        top:50%;
+        left:50%;
+        background-color:#fff;
+        width:50%;
+        height:2px;
+        border-radius:10px;
+        transform-origin:center center;
+        transform:translate(-50%,-50%) rotate(-45deg) ;
+
+    }
+    .line_pop_content{
+        position: relative;
+        width:100%;
+        height:auto;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .pop_image_area{
+        position:relative;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit:cover;
+        overflow:hidden;
+        height:250px;
+    }
+    .pop_image{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+    }
+    .back-overlay{
+        position: fixed;
+        display: block;
+        background-color: rgba(0,0,0,0.7);
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        top: 0%;
+        left: 0%;
+    }
+  }
+{% endstylesheet %}

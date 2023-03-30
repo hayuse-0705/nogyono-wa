@@ -13,18 +13,21 @@
 
     <input class="sign_in_btn" type="submit" value="サインイン" />
 
+
+    <p class="registar_btn_wrap"><a class="registar_btn" href="/account/register">アカウントを作成</a></p>
+    
     {% endform %}
 
-    <h2 class="login_tag">パスワードを忘れた>></h2>
+    <h2 class="login_tag">パスワードを忘れた場合は下記入力して送信</h2>
+    
     {% form 'recover_customer_password' %}
 
     {{ form.errors | default_errors }}
-
-    <label class="login_tag" for="customer_email">メールアドレス</label><br>
+<br>
+    <label class="login_tag forget_pass_mail" for="customer_email">メールアドレス</label><br>
     <input class="login_tag_form" type="email" name="email" />
-
     <input class="sign_in_btn" type="submit" value="送信する" />
-    <a class="registar_btn" href="/account/register"><p>アカウントを作成＞＞</p></a>
+    
 
     {% endform %}
 </div>

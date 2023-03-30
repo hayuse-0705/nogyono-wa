@@ -1,0 +1,360 @@
+@charset "UTF-8";
+
+.shop_main{
+    position:relative;
+    padding:100px 0;
+    background-color:rgba(255,255,255,1);
+    z-index:0;
+    width:100%;
+    overflow:hidden;
+}
+.shop_main::before{
+}
+.first_view{
+    position:relative;
+}
+
+.fv_title{
+    position:relative;
+    width:100%;
+}
+.page_fv_img_blur{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: -10;
+}
+.shop_fv_image{
+    width:100%;
+    object-fit:cover;
+    object-position:0% -100px;
+}
+
+.fv_tree_title{
+    display:inline-block;
+    font-size:3vw;
+    color:#fff;
+    position:relative;
+    font-weight:100;
+    text-align:center;
+    padding:10px 50px;
+    margin-left:5%;
+    margin-top:200px;
+    letter-spacing:5px;
+    /*background-color:rgba(255,255,255,0.5);*/
+    margin-bottom:200px;
+}
+
+/*
+.fv_tree_title::before{
+    content:'';
+    position:absolute;
+    border-top:2px solid #fff;
+    border-bottom:5px solid #fff;
+    width:100%;
+    bottom:-20px;
+    height:20px;
+    left:0%;
+}*/
+
+
+.shop_contents{
+    position:relative;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    flex-flow:column;
+    gap:20px;
+    width:90%;
+    max-width:1300px;
+    margin:0 auto;
+}
+@media screen and (max-width: 991px) {
+    .shop_contents{
+        position:relative;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:20px;
+        width:90%;
+        max-width:1300px;
+        margin:0 auto;
+    }
+}
+.product_price{
+    font-size:1rem;
+    color:black;
+}
+
+.product_item:nth-child(2n) .product_part::before{
+    color:#efefef;
+}
+.product_item:nth-child(2n) .product_part::after{
+    color:#efefef;
+}
+
+/*
+.product_part::before{
+    content:'FOOD NOGYO PRODUCT FOOD NOGYO PRODUCT FOOD NOGYO PRODUCT FOOD NOGYO PRODUCT PRODUCT FOOD NOGYO PRODUCT FOOD NOGYO PRODUCT FOOD NOGYO PRODUCT FOOD NOGYO PRODUCT FOOD NOGYO PRODUCT';
+    position:absolute;
+    letter-spacing:5px;
+    font-weight:300;
+    text-align:center;
+    font-size:1rem;
+    color:#000;
+    left:0%;
+    top:0%;
+    width:200%;
+    height:25px;
+    overflow:hidden;
+    transform:translate(-20%,-18px);
+    z-index:-4;
+}
+.product_part::after{
+    content:'FOOD NOGYO PRODUCT FOOD NOGYO PRODUCT FOOD NOGYO PRODUCT FOOD NOGYO PRODUCT PRODUCT FOOD NOGYO PRODUCT FOOD NOGYO PRODUCT FOOD NOGYO PRODUCT FOOD NOGYO PRODUCT FOOD NOGYO PRODUCT';
+    position:absolute;
+    letter-spacing:5px;
+    font-weight:300;
+    text-align:center;
+    font-size:1rem;
+    color:#000;
+    left:0%;
+    bottom:0%;
+    width:200%;
+    height:25px;
+    overflow:hidden;
+    padding:8px;
+    transform:translate(-20%,26px) rotate(180deg);
+    z-index:-4;
+}
+.product_item::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0%;
+    transform:scaleX(200%);
+    background-color:#000;
+    z-index:-3;
+}
+.product_item:nth-child(2n)::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0%;
+    transform:scaleX(200%);
+    background-color:#efefef;
+    z-index:-3;
+}
+.product_item::before{
+    content:'FOOD NOGYO';
+    position:absolute;
+    font-size:15rem;
+    top:0%;
+    left:50%;
+    opacity:0.2;
+    letter-spacing:10px;
+    transform:translateX(-50%) translateY(25px);
+    text-align:center;
+    font-family: 'Bebas Neue', cursive;
+    z-index:-1;
+    width:200%;
+    color:#fff;
+}
+
+.product_item:nth-child(2n)::before{
+    content:'FOOD NOGYO';
+    position:absolute;
+    font-size:15rem;
+    top:0%;
+    left:50%;
+    opacity:0.1;
+    letter-spacing:10px;
+    transform:translateX(-50%) translateY(25px);
+    text-align:center;
+    font-family: 'Bebas Neue', cursive;
+    z-index:-1;
+    width:200%;
+    color:#000;
+}
+*/
+
+
+.collection_img{
+    position:relative;
+    width:100%;
+    height:50%;
+    overflow:hidden;
+    transform-origin:center center;
+    border-radius:10px;
+}
+.collection_img::before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+    border-radius:10px;
+}
+/*.collection_img::after{
+    content:'';
+    position:absolute;
+    width:150%;
+    height:500px;
+    background-color:#000;
+    opacity:0.5;
+    top:0%;
+    left:0%;
+    transform:translateY(100%)translateX(-50px);
+    opacity:0;
+    transition:0.3s;
+}*/
+
+/*.collection_img::before{
+    content:'view more';
+    position:absolute;
+    font-size:1rem;
+    letter-spacing:5px;
+    color:#fff;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:1;
+    font-weight:100;
+    opacity:0;
+    transition:0.5s;
+}*/
+
+.collection_img_src{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    object-fit: cover;
+    border-radius:10px;
+    object-position:center center;
+    transition:0.3s;
+}
+
+.collection_img:hover .collection_img_src{
+}
+
+.shop_details{
+    position:relative;
+    padding:10px;
+    padding-left:0;
+    max-width:300px;
+    left:0%;
+    top:-75px;
+    transform:translateY(100px);
+}
+
+.product_item{
+    position:relative;
+    width:100%;
+    margin:20px auto; 
+}
+.product_item:hover .collection_img::after{
+    transform:translateY(0%);
+    opacity:0.6;
+}
+.collection_img::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0%;
+    left:0%;
+    background-color:#000;
+    transform:translateY(100%);
+    opacity:0;
+    transition:0.3s;
+    color:#fff;
+}
+.product_item:hover::after{
+    opacity:1;
+}
+.product_item::after{
+    content:'view more';
+    position:absolute;
+    top:50%;
+    left:50%;
+    text-align:center;
+    transform:translate(-50%,-500%);
+    transition:0.3s;
+    color:#fff;
+    font-weight:100;
+    font-size:1rem;
+    letter-spacing:5px;
+    opacity:0;
+}
+
+
+.shop_title{
+    position:relative;
+    color:#343434;
+    padding:0;
+    font-size:0.75rem;
+    text-align:left;
+    margin-bottom:20px;
+}
+.product_price{
+    color:#787878;
+    text-align:left;
+    font-size:12px;
+}
+
+
+/*.shop_title:before{
+    content:'';
+    position:absolute;
+    width:5px;
+    height:130%;
+    background-color:#000;
+    left: 0%;
+    transform:translateX(-10px);
+    top:-15%;
+}*/
+
+
+.shop_product_details{
+    font-size:12px;
+    position:absolute;
+    bottom:0%;
+    border-top:10px solid #000;
+    width:70%;
+    max-width:500px;
+    padding:30px 20px;
+    background-color:#fff;
+    right:0%;
+    transform:translateY(50%);
+    max-height:200px;
+    overflow:auto;
+    opacity:0.97;
+    box-shadow:10px 10px 10px rgba(0,0,0,0.2);
+}
+.variant-inventory{
+    position:absolute;
+    background-color:#AD6363;
+    top:0%;
+    left:0%;
+    color:#fff;
+    transform:rotate(-45deg) translate(-35px,-70px);
+    border-radius:10px;
+    opacity:0.8;
+    z-index:100;
+    padding-top:50px;
+}
+.sold_out{
+    margin:10px 50px;
+    font-weight:600;
+    font-size:1.5rem;
+}
+.sold_out_char{
+    font-weight:100;
+    text-align:left;
+    color:#787878;
+}
+
+

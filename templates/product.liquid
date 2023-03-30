@@ -22,7 +22,10 @@
   <div class="product_right">
     <div class="product_titles">
       <h1 class="product_title">{{ product.title }}</h1>
+      {% if product.variants.first.inventory_management == "shopify" and product.variants.first.inventory_quantity > 0 %}
       {{ current_variant.price | money }}
+      {% else %}
+      {% endif %}
     </div>
     <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
       <select name="id" id="productSelect">

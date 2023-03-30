@@ -1,0 +1,132 @@
+.product_title{
+    font-size:1.25rem;
+    color:#454545;
+}
+#Quantity{
+    margin-left:10px;
+    height:30px;
+    width:50px;
+    font-size:1rem;
+    color:#454545;
+    text-align:center;
+    border:2px solid rgba(49,29,16,0.2); 
+    background-color:#fff;
+    border-radius:5px;
+}
+#AddToCart{
+    height:50px;
+    text-align:center;
+    width:200px;
+    background-color:#343434;
+    position:absolute;
+    right:0%;
+    color:#fff;
+    font-size:1rem;
+    border:2px solid #fff;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.product_details{
+    border-top:2px solid rgba(49,29,16,0.2);
+    border-bottom:2px solid rgba(49,29,16,0.2);
+    max-width:800px;
+    padding:20px;
+    margin:50px auto;
+    margin-top:20px;
+    font-size:12px;
+    text-align:center;
+}
+.product_details p{
+    width:80%;
+    max-width:500px;
+    margin: 0 auto;
+}
+.product_details h1{
+    position:relative;
+    margin:20px;
+    font-size:1.5rem;
+    display:inlin-block;
+}
+
+.product_right{
+    position:relative;
+    width:50%;
+}
+.product_left{
+    width:50%;
+}
+.product_img{
+    width:100%;
+    height:auto;
+    max-height:500px;
+    object-fit:cover;
+}
+.product_sub_img{
+    width:100%;
+    height:100px;
+    object-fit:cover;
+    margin-top:20px;
+}
+#productSelect{
+    display:none;
+}
+.product_titles{
+    margin-top:20px;
+    margin-bottom:10px;
+    display:flex;
+    border-bottom:2px solid rgba(49,29,16,0.2);
+    width:auto;
+    align-items:flex-end;
+    gap:20px;
+}
+.products_wrapp{
+    position:relative;
+    width:80%;
+    margin:50px auto;
+    padding:50px 50px;
+    display:flex;
+    max-width:1500px;
+    gap:20px;
+
+}
+.sub-img{
+    width:100%;
+    position:relative;
+    margin:0;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap:10px;
+}
+
+.product_info{
+    position:relative;
+    display:flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+}
+.products_wrapp h3{
+    font-size:1rem;
+    margin:10px 0;
+}
+.product_sold_out{
+    font-size:1rem;
+    border:2px solid rgba(49,29,16,0.2);
+    display:inline-block;
+    padding:10px 30px;
+    border-radius:10px;
+    right:0%;
+    font-weight:600;
+    position:absolute;
+}
+.collection-link{
+    font-size:1rem;
+    position:absolute;
+    left:50px;
+    bottom:0px;
+    font-weight:600;
+    padding:10px 30px;
+    border:2px solid rgba(49,29,16,0.2);
+    border-radius:10px;
+}
+
+

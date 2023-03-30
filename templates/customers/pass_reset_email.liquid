@@ -1,0 +1,12 @@
+<!-- /templates/customers/account.liquid -->
+<div id="reset_mail_forms">
+    <h2>登録したメールアドレス</h2>
+
+    {% form 'recover_customer_password' %}
+        
+        {{ form.errors | default_errors }}
+
+        <label class="login_tag" for="customer_email">メールアドレス</label><br>
+        <input class="login_tag_form" type="email" name="email"/>
+    {% endform %}
+</div>

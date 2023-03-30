@@ -1,0 +1,119 @@
+.cart-img{
+    width:250px;
+    height:200px;
+    object-fit:cover;
+}
+#mycart{
+    width:80%;
+    margin:0 auto;
+    padding: 50px 0;
+}
+.cart_btn{
+    position:relative;
+    height:40px;
+    padding:0 20px;
+    text-align:center;
+    background-color:#fff;
+    border:2px solid #311D10;
+    border-radius:5px;
+}
+.cart_btns{
+    display:flex;
+    justify-content:flex-end;
+    gap:20px;
+}
+.sub_total{
+    position:relative;
+    text-align:right;
+    font-size:1rem;
+    margin-bottom:30px;
+    margin-top:30px;
+}
+.sub_total::after{
+    content:'';
+    position:absolute;
+    width:30%;
+    right:0;
+    bottom:0;
+    border-bottom: 1px solid rgba(49,29,16,0.5);
+}
+th{
+    text-align:center;
+}
+.my_cart_products td{
+    padding:0 20px;
+    vertical-align:middle;
+}
+.my_cart_products td:nth-child(1){
+    padding:0;
+}
+.my_cart_products{  
+    border-bottom:2px solid rgba(49,29,16,0.3);
+}
+.my_cart_products td:nth-child(2n){
+    background-color:#F7F6EF;
+}
+.main_title{
+    font-size:2rem;
+    position:relative;
+    padding-left:20px;
+}
+.main_title::before{
+    content:'';
+    position:absolute;
+    width:10px;
+    left:0;
+    height:100%;
+    top:0;
+    background-color:#311D10;
+}
+.cart_num{
+    width:50px;
+    border:2px solid #311D10;
+    border-radius:5px;
+}
+.cart_nothing{
+    margin: 50px 0;
+    text-align:center;
+}
+.cart_product{
+    position:relative;
+    display:flex;
+    gap:20px;
+    border:2px solid rgba(49,29,16,0.2);
+    padding:20px;
+    width:80%;
+    max-width:800px;
+    margin:20px auto;
+    border-radius:10px;
+}
+.cart_details{
+    margin:0;
+    width:70%;
+}
+.cart_price{
+    display:flex;
+    justify-content:flex-end;
+}
+.cart_num{
+    width:30px;
+    margin-left:10px;
+}
+.cart_del{
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.cart_quantity{
+    text-align:right;
+    margin:10px 0;
+    display:flex;
+    justify-content:flex-end;
+    align-items:end;
+}
+.cart_all_price{
+    text-align:right;
+    margin:10px 0;
+}
